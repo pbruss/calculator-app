@@ -1,5 +1,4 @@
 body {
-  background-color: lightblue;
   font-family: Candara, Futura, sans-serif;
 }
 
@@ -18,7 +17,7 @@ h1 {
 }
 
 button {
-  color: darkblue;
+  color: navyblue;
   font-size: 25px;
   background-color: lightblue;
   padding: 1vh 2vw;
@@ -32,7 +31,7 @@ button:active {
 }
 
 input {
-  color: darkblue;
+  color: navyblue;
   background-color: lightblue;
   padding: 1.5vh 1vw;
   margin: 1vw;
