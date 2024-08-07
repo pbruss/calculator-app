@@ -1,0 +1,42 @@
+body {
+  background-color: lightblue;
+  font-family: Candara, Futura, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+#container {
+  background-color: white;
+  margin: 5vh 20vw 5vh 20vw;
+  padding: 4vw;
+  border-radius: 4vw;
+  border: solid 8px darkblue;
+  text-align: center;
+}
+
+button {
+  color: darkblue;
+  font-size: 25px;
+  background-color: lightblue;
+  padding: 1vh 2vw;
+  margin: 1vw;
+  border-radius: 100px;
+  border: solid 3px darkblue;
+}
+
+button:active {
+  border-color: gray;
+}
+
+input {
+  color: darkblue;
+  background-color: lightblue;
+  padding: 1.5vh 1vw;
+  margin: 1vw;
+  border: solid 3px darkblue;
+  border-radius: 10px;
+  font-size: 25px;
+}

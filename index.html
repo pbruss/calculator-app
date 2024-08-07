@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script>
+      function doAdd() {
+        let sum;
+        let input1;
+        let input2;
+        input1 = document.getElementById("box1").value;
+        document.getElementById("box1").value = input1;
+        console.log(input1);
+        input1 = Number(input1);
+        input2 = document.getElementById("box2").value;
+        document.getElementById("box2").value = input2;
+        console.log(input2);
+        input2 = Number(input2);
+        sum = input1 + input2;
+        console.log(sum);
+        document.getElementById("box3").value = sum;
+        if (sum < 0) {
+          document.getElementById("box3").style.color = "red";
+        } else {
+          document.getElementById("box3").style.color = "darkblue";
+        }
+      }
+      function doSubtract() {
+        let difference;
+        let input1;
+        let input2;
+        input1 = document.getElementById("box1").value;
+        document.getElementById("box1").value = input1;
+        console.log(input1);
+        input1 = Number(input1);
+        input2 = document.getElementById("box2").value;
+        document.getElementById("box2").value = input2;
+        console.log(input2);
+        input2 = Number(input2);
+        difference = input1 - input2;
+        console.log(difference);
+        document.getElementById("box3").value = difference;
+        if (difference < 0) {
+          document.getElementById("box3").style.color = "red";
+        } else {
+          document.getElementById("box3").style.color = "darkblue";
+        }
+      }
+      function doMultiply() {
+        let multiplication;
+        let input1;
+        let input2;
+        input1 = document.getElementById("box1").value;
+        document.getElementById("box1").value = input1;
+        console.log(input1);
+        input1 = Number(input1);
+        input2 = document.getElementById("box2").value;
+        document.getElementById("box2").value = input2;
+        console.log(input2);
+        input2 = Number(input2);
+        multiplication = input1 * input2;
+        console.log(multiplication);
+        document.getElementById("box3").value = multiplication;
+        if (multiplication < 0) {
+          document.getElementById("box3").style.color = "red";
+        } else {
+          document.getElementById("box3").style.color = "darkblue";
+        }
+      }
+      function doDivide() {
+        let division;
+        let input1;
+        let input2;
+        input1 = document.getElementById("box1").value;
+        document.getElementById("box1").value = input1;
+        console.log(input1);
+        input1 = Number(input1);
+        input2 = document.getElementById("box2").value;
+        document.getElementById("box2").value = input2;
+        console.log(input2);
+        input2 = Number(input2);
+        division = input1 / input2;
+        console.log(division);
+        document.getElementById("box3").value = division;
+        if (division < 0) {
+          document.getElementById("box3").style.color = "red";
+        } else {
+          document.getElementById("box3").style.color = "darkblue";
+        }
+      }
+      function doPower() {
+        let total;
+        let number;
+        let power;
+        number = document.getElementById("box1").value;
+        document.getElementById("box1").value = number;
+        console.log(number);
+        number = Number(number);
+        power = document.getElementById("box2").value;
+        document.getElementById("box2").value = power;
+        console.log(power);
+        power = Number(power);
+        total = 1;
+        for (let i = 1; i <= power; i++) {
+          total = total * number;
+        }
+        console.log(power);
+        document.getElementById("box3").value = total;
+        if (total < 0) {
+          document.getElementById("box3").style.color = "red";
+        } else {
+          document.getElementById("box3").style.color = "darkblue";
+        }
+      }
+      function doClear() {
+        document.getElementById("box1").value = "";
+        document.getElementById("box2").value = "";
+        document.getElementById("box3").value = "";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>CALCULATOR</h1>
+      <input type="text" id="box1" class="boxes" />
+      <input type="text" id="box2" class="boxes" />
+      <br />
+      <button type="button" onclick="doAdd()" class="center">+</button>
+      <button type="button" onclick="doSubtract()" class="center">-</button>
+      <button type="button" onclick="doMultiply()" class="center">*</button>
+      <button type="button" onclick="doDivide()" class="center">/</button>
+      <button type="button" onclick="doPower()" class="center">^</button>
+      <br />
+      <input type="text" id="box3" class="boxes" />
+      <br />
+      <button type="button" onclick="doClear()" class="center" id="clear">
+        Clear
+      </button>
+    </div>
+  </body>
+</html>
